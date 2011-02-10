@@ -306,7 +306,7 @@ function check_for_achievements
             count_unlock_achievement "Presenter" "Shows one or more objects (blobs, trees, tags and commits) with git show" "$1"
             ;;
         show-branch )
-            count_unlock_achievement "Gardner" "Shows the commit ancestry graph with git show-branch" "$1"
+            count_unlock_achievement "Gardener" "Shows the commit ancestry graph with git show-branch" "$1"
             ;;
         stash )
             count_unlock_achievement "Product Manager" "Stash the changes in a dirty working directory away with git stash." "$1"
@@ -443,7 +443,7 @@ There are $total Achievements. Some achievements can be leveled up depending on 
     fi
 
     if [ ! "`git config --global achievement.upload`" = "true" ] ; then
-        echo "Global achievement.upload not set to true, updates left uncommited"
+        echo "Global achievement.upload not set to true, updates left uncommitted"
         return
     fi
 
